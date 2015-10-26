@@ -1,0 +1,8 @@
+((2,(istoica,prof)),(5,(franklin,prof)),colleague)
+((2,(istoica,prof)),(9,(nphelge,student)),advisor)
+((2,(istoica,prof)),(11,(rmutt,student)),advisor)
+((3,(rxin,student)),(7,(jgonzal,postdoc)),collab)
+((5,(franklin,prof)),(3,(rxin,student)),advisor)
+((5,(franklin,prof)),(7,(jgonzal,postdoc)),pi)
+((5,(franklin,prof)),(8,(bshears,student)),advisor)
+((5,(franklin,prof)),(10,(asmithee,student)),advisor)
