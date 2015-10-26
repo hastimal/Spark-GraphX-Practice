@@ -19,8 +19,11 @@ object SparkGraphXGeneral {
 
     // Create an RDD for the vertices
     val users: RDD[(VertexId, (String, String))] =
-      sc.parallelize(Array((3L, ("rxin", "student")), (7L, ("jgonzal", "postdoc")),
-        (5L, ("franklin", "prof")), (2L, ("istoica", "prof")))).cache()
+      sc.parallelize(Array(
+        (3L, ("rxin", "student")),
+        (7L, ("jgonzal", "postdoc")),
+        (5L, ("franklin", "prof")),
+        (2L, ("istoica", "prof")))).cache()
     // Create an RDD for edges
     val relationships: RDD[Edge[String]] =
       sc.parallelize(Array(Edge(3L, 7L, "collab"),    Edge(5L, 3L, "advisor"),
@@ -41,16 +44,16 @@ object SparkGraphXGeneral {
 
     //This will count the out going edges from each node
     val degrees = graph.outDegrees
-    degrees.take(10)
+    degrees.take(10).foreach(println(_))
 
     //This will count the in going edges from each node
     val degrees2 = graph.inDegrees
-    degrees2.take(10)
+    degrees2.take(10).foreach(println(_))
 
     //This will giv eyou the node ID with the number of triangles
     //next to that triangle
     val tr = graph.triangleCount()
-    tr.vertices.take(10)
+    tr.vertices.take(10).foreach(println(_))
 
     //printing stuff
     println("Number of verices: "+graph.numVertices+"\nnumber of edges: "+graph.numEdges+"\ntotal outgoing edges from each node: "+  degrees.collect()+ "and in going edges from each node: "+ degrees2.take(10).toString)

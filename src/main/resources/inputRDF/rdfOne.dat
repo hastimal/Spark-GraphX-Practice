@@ -1,0 +1,5 @@
+<http://test/people/1><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.test.com/test#Person><http://my.graph.com>.\n
+<http://test/people/1><http://www.w3.org/2000/01/rdf-schema#label>\Testperson1\<http://my.graph.com>.\n
+<http://test/people/1><http://www.test.com/test#name>\John\<http://my.graph.com>.\n
+<http://test/people/1><http://www.test.com/test#lastname>\Smith\<http://my.graph.com>.\n
+<http://test/people/1><http://www.test.com/test#hasBirthPlace><idLoc1><http://my.graph.com>.\n;
