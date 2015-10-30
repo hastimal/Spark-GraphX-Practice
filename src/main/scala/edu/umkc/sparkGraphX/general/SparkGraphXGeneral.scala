@@ -1,4 +1,4 @@
-package edu.umkc.sparkGraphX.hastimal
+package edu.umkc.sparkGraphX.general
 
 import org.apache.spark._
 import org.apache.spark.graphx.{Edge, Graph, VertexId}

@@ -1,4 +1,4 @@
-package edu.umkc.sparkGraphX.hastimal
+package edu.umkc.sparkGraphX.general
 import org.apache.spark.graphx._
 import org.apache.spark.graphx.util.GraphGenerators
 import org.apache.spark.{SparkConf, SparkContext}

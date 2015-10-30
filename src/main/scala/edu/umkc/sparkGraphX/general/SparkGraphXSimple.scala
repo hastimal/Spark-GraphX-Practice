@@ -1,4 +1,4 @@
-package edu.umkc.sparkGraphX.hastimal
+package edu.umkc.sparkGraphX.general
 
 import java.io.{File, PrintWriter}
 import scala.language.postfixOps

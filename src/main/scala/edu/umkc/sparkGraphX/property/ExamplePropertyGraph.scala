@@ -1,4 +1,4 @@
-package edu.umkc.graphx
+package edu.umkc.sparkGraphX.property
 
 /**
  * Created by hastimal on 10/26/2015.
@@ -25,6 +25,8 @@ import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.graphx._
 import org.apache.spark.rdd.RDD
 
+import scala.reflect.io.Path
+
 object ExamplePropertyGraph {
   def main(args: Array[String]) {
     System.setProperty("hadoop.home.dir", "F:\\winutils")
@@ -35,16 +37,16 @@ object ExamplePropertyGraph {
     // Create an RDD for the vertices
     val users: RDD[(VertexId, (String, String))] =
       sc.parallelize(Array(
-        (3L, ("rxin", "student")),
-        (7L, ("jgonzal", "postdoc")),
+        (3L, ("rakesh", "student")),
+        (7L, ("john", "postdoc")),
         (5L, ("franklin", "prof")),
-        (2L, ("istoica", "prof")),
+        (2L, ("ishwar", "prof")),
         // Following lines are new data
-        (8L, ("bshears", "student")),
-        (9L, ("nphelge", "student")),
-        (10L, ("asmithee", "student")),
-        (11L, ("rmutt", "student")),
-        (12L, ("ntufnel", "student"))
+        (8L, ("biswash", "student")),
+        (9L, ("nitin", "student")),
+        (10L, ("amit", "student")),
+        (11L, ("roshan", "student")),
+        (12L, ("nilesh", "student"))
       ))
     // Create an RDD for edges
     val relationships: RDD[Edge[String]] =
@@ -67,14 +69,28 @@ object ExamplePropertyGraph {
       s"<$baseURI${t.srcAttr._1}> <$baseURI${t.attr}> <$baseURI${t.dstAttr._1}> ."
     )
     )
-    //graph.triplets.saveAsTextFile("src/main/resources/outputData/rdf.txt")
-
+    //Deleting output files recursively if exists
+    val dir1 = Path("src/main/resources/outputData/rdf1.txt")
+    if (dir1.exists) {
+      dir1.deleteRecursively()
+      println("Successfully existing output rdf1.tx deleted!!")
+    }
+    println("Writing in new files as output.......")
+    graph.triplets.map(t=>s"<$baseURI${t.srcAttr._1}> <$baseURI${t.attr}> <$baseURI${t.dstAttr._1}>.").saveAsTextFile("src/main/resources/outputData/rdf1.txt")
+   // saveAsTextFile("src/main/resources/outputData/rdf.txt")
 
     // Output literal property triples
     users.foreach(t => println(
       s"""<$baseURI${t._2._1}> <${baseURI}role> \"${t._2._2}\" ."""
     ))
-
+    //Deleting output files recursively if exists
+    val dir2 = Path("src/main/resources/outputData/rdf2.txt")
+    if (dir2.exists) {
+      dir2.deleteRecursively()
+      println("Successfully existing output rdf2.tx deleted!!")
+    }
+    println("Writing in new files as output.......")
+    users.map(t=>s"""<$baseURI${t._2._1}> <${baseURI}role> \"${t._2._2}\" .""").saveAsTextFile("src/main/resources/outputData/rdf2.txt")
     sc.stop
 
   }

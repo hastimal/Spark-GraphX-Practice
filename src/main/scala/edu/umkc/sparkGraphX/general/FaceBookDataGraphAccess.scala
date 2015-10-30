@@ -1,4 +1,4 @@
-package edu.umkc.sparkGraphX.hastimal
+package edu.umkc.sparkGraphX.general
 
 /**
  * Created by hastimal on 10/16/2015.

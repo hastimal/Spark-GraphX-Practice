@@ -1,7 +1,8 @@
-package edu.umkc.graphx
+package edu.umkc.sparkGraphX.property
 
 /**
  * Created by hastimal on 10/26/2015.
+ * http://www.snee.com/bobdc.blog/2015/04/running-spark-graphx-algorithm.html
  */
 
 // readLoCSH.scala: read Library of Congress Subject Headings into
@@ -23,11 +24,10 @@ object ReadLoCSH {
   def main(args: Array[String]) {
 
     System.setProperty("hadoop.home.dir", "F:\\winutils")
-    val sc = new SparkContext(new SparkConf().setAppName("ReadLoCSH").setMaster("local"))
+    val sc = new SparkContext(new SparkConf().setAppName("ReadLoCSH").setMaster("local[*]").set("spark.executor.memory", "3g"))
 
     // regex pattern for end of triple
-    val tripleEndingPattern =
-      """\s*\.\s*$""".r
+    val tripleEndingPattern = """\s*\.\s*$""".r
     // regex pattern for language tag
     val languageTagPattern = "@[\\w-]+".r
 
@@ -48,7 +48,7 @@ object ReadLoCSH {
     // Read the Library of Congress n-triples file
     //val source = Source.fromFile("sampleSubjects.nt","UTF-8")  // shorter for testing
   //  val source = Source.fromFile("PrefLabelAndRelatedMinusBlankNodes.nt", "UTF-8")
-    val source = Source.fromFile("E:\\Technical course\\Course\\Directed Reading\\rdf from anas\\sample.nt", "UTF-8")
+    val source = Source.fromFile("E:\\Technical course\\Course\\Directed Reading\\rdf from anas\\subject.nt", "UTF-8")
     val lines = source.getLines.toArray
 
     // When parsing the data we read, use this map to check whether each

@@ -1,4 +1,4 @@
-package edu.umkc.graphx
+package edu.umkc.sparkGraphX.property
 
 import org.apache.spark.graphx.{GraphLoader, VertexRDD, Graph, Edge}
 import org.apache.spark.rdd.RDD
@@ -20,14 +20,14 @@ object GraphAccessSpark {
       (6L, ("Fran", 50))
     )
     val edgeArray = Array(
-      Edge(2L, 1L, 7),
-      Edge(2L, 4L, 2),
-      Edge(3L, 2L, 4),
-      Edge(3L, 6L, 3),
-      Edge(4L, 1L, 1),
-      Edge(5L, 2L, 2),
-      Edge(5L, 3L, 8),
-      Edge(5L, 6L, 3)
+      Edge(2L, 1L, 700),
+      Edge(2L, 4L, 200),
+      Edge(3L, 2L, 400),
+      Edge(3L, 6L, 300),
+      Edge(4L, 1L, 100),
+      Edge(5L, 2L, 200),
+      Edge(5L, 3L, 800),
+      Edge(5L, 6L, 300)
     )
 
     val vertexRDD: RDD[(Long, (String, Int))] = sc.parallelize(vertexArray)
