@@ -1,0 +1,136 @@
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Cocktails"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#classification> "TX951" .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasBroaderAuthority> <http://id.loc.gov/authorities/subjects/sh85003283> .
+<http://id.loc.gov/authorities/subjects/sh85003283> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh85003283> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh85003283> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Alcoholic beverages"@en .
+<http://id.loc.gov/authorities/subjects/sh85003283> <http://www.w3.org/2000/01/rdf-schema#label> "Alcoholic beverages"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/authorities/subjects/collection_LCSHAuthorizedHeadings> .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/authorities/subjects/collection_SubdivideGeographically> .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/authorities/subjects/sh2006006484> .
+<http://id.loc.gov/authorities/subjects/sh2006006484> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh2006006484> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh2006006484> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mojitos"@en .
+<http://id.loc.gov/authorities/subjects/sh2006006484> <http://www.w3.org/2000/01/rdf-schema#label> "Mojitos"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasReciprocalAuthority> <http://id.loc.gov/authorities/subjects/sh85027615> .
+<http://id.loc.gov/authorities/subjects/sh85027615> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh85027615> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh85027615> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Cocktail parties"@en .
+<http://id.loc.gov/authorities/subjects/sh85027615> <http://www.w3.org/2000/01/rdf-schema#label> "Cocktail parties"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasReciprocalAuthority> <http://id.loc.gov/authorities/subjects/sh2009010761> .
+<http://id.loc.gov/authorities/subjects/sh2009010761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh2009010761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh2009010761> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Happy hours"@en .
+<http://id.loc.gov/authorities/subjects/sh2009010761> <http://www.w3.org/2000/01/rdf-schema#label> "Happy hours"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/authorities/subjects/sh2011002525> .
+<http://id.loc.gov/authorities/subjects/sh2011002525> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh2011002525> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh2011002525> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Tejate"@en .
+<http://id.loc.gov/authorities/subjects/sh2011002525> <http://www.w3.org/2000/01/rdf-schema#label> "Tejate"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/authorities/subjects/sh2006002661> .
+<http://id.loc.gov/authorities/subjects/sh2006002661> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh2006002661> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh2006002661> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Gelatin shots"@en .
+<http://id.loc.gov/authorities/subjects/sh2006002661> <http://www.w3.org/2000/01/rdf-schema#label> "Gelatin shots"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/authorities/subjects/sh85085881> .
+<http://id.loc.gov/authorities/subjects/sh85085881> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh85085881> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh85085881> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mint juleps"@en .
+<http://id.loc.gov/authorities/subjects/sh85085881> <http://www.w3.org/2000/01/rdf-schema#label> "Mint juleps"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/authorities/subjects/sh2010008438> .
+<http://id.loc.gov/authorities/subjects/sh2010008438> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh2010008438> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh2010008438> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mai tais (Cocktails)"@en .
+<http://id.loc.gov/authorities/subjects/sh2010008438> <http://www.w3.org/2000/01/rdf-schema#label> "Mai tais (Cocktails)"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/authorities/subjects/sh2001002931> .
+<http://id.loc.gov/authorities/subjects/sh2001002931> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh2001002931> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh2001002931> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Margaritas"@en .
+<http://id.loc.gov/authorities/subjects/sh2001002931> <http://www.w3.org/2000/01/rdf-schema#label> "Margaritas"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/authorities/subjects/sh97006948> .
+<http://id.loc.gov/authorities/subjects/sh97006948> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh97006948> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh97006948> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Non-alcoholic cocktails"@en .
+<http://id.loc.gov/authorities/subjects/sh97006948> <http://www.w3.org/2000/01/rdf-schema#label> "Non-alcoholic cocktails"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasNarrowerAuthority> <http://id.loc.gov/authorities/subjects/sh85081654> .
+<http://id.loc.gov/authorities/subjects/sh85081654> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh85081654> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh85081654> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Martinis"@en .
+<http://id.loc.gov/authorities/subjects/sh85081654> <http://www.w3.org/2000/01/rdf-schema#label> "Martinis"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://data.bnf.fr/ark:/12148/cb11934846z> .
+<http://data.bnf.fr/ark:/12148/cb11934846z> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://data.bnf.fr/ark:/12148/cb11934846z> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Cocktails (boissons)"@FR .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://d-nb.info/gnd/4010342-0> .
+<http://d-nb.info/gnd/4010342-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://d-nb.info/gnd/4010342-0> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Cocktail"@DE .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://d-nb.info/gnd/4039532-7> .
+<http://d-nb.info/gnd/4039532-7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://d-nb.info/gnd/4039532-7> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mischgetränk"@DE .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://d-nb.info/gnd/4114442-9> .
+<http://d-nb.info/gnd/4114442-9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://d-nb.info/gnd/4114442-9> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Longdrink"@DE .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/authorities/subjects> .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://id.loc.gov/vocabulary/identifiers/lccn> "sh 85027617" .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2002/07/owl#sameAs> <info:lc/authorities/sh85027617> .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2002/07/owl#sameAs> <http://id.loc.gov/authorities/sh85027617#concept> .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#broader> <http://id.loc.gov/authorities/subjects/sh85003283> .
+<http://id.loc.gov/authorities/subjects/sh85003283> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh85003283> <http://www.w3.org/2004/02/skos/core#prefLabel> "Alcoholic beverages"@en .
+<http://id.loc.gov/authorities/subjects/sh85003283> <http://www.w3.org/2000/01/rdf-schema#label> "Alcoholic beverages"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/authorities/subjects/sh2006006484> .
+<http://id.loc.gov/authorities/subjects/sh2006006484> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh2006006484> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mojitos"@en .
+<http://id.loc.gov/authorities/subjects/sh2006006484> <http://www.w3.org/2000/01/rdf-schema#label> "Mojitos"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/authorities/subjects/sh2011002525> .
+<http://id.loc.gov/authorities/subjects/sh2011002525> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh2011002525> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tejate"@en .
+<http://id.loc.gov/authorities/subjects/sh2011002525> <http://www.w3.org/2000/01/rdf-schema#label> "Tejate"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/authorities/subjects/sh2006002661> .
+<http://id.loc.gov/authorities/subjects/sh2006002661> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh2006002661> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gelatin shots"@en .
+<http://id.loc.gov/authorities/subjects/sh2006002661> <http://www.w3.org/2000/01/rdf-schema#label> "Gelatin shots"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/authorities/subjects/sh85085881> .
+<http://id.loc.gov/authorities/subjects/sh85085881> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh85085881> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mint juleps"@en .
+<http://id.loc.gov/authorities/subjects/sh85085881> <http://www.w3.org/2000/01/rdf-schema#label> "Mint juleps"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/authorities/subjects/sh2010008438> .
+<http://id.loc.gov/authorities/subjects/sh2010008438> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh2010008438> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mai tais (Cocktails)"@en .
+<http://id.loc.gov/authorities/subjects/sh2010008438> <http://www.w3.org/2000/01/rdf-schema#label> "Mai tais (Cocktails)"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/authorities/subjects/sh2001002931> .
+<http://id.loc.gov/authorities/subjects/sh2001002931> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh2001002931> <http://www.w3.org/2004/02/skos/core#prefLabel> "Margaritas"@en .
+<http://id.loc.gov/authorities/subjects/sh2001002931> <http://www.w3.org/2000/01/rdf-schema#label> "Margaritas"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/authorities/subjects/sh97006948> .
+<http://id.loc.gov/authorities/subjects/sh97006948> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh97006948> <http://www.w3.org/2004/02/skos/core#prefLabel> "Non-alcoholic cocktails"@en .
+<http://id.loc.gov/authorities/subjects/sh97006948> <http://www.w3.org/2000/01/rdf-schema#label> "Non-alcoholic cocktails"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#narrower> <http://id.loc.gov/authorities/subjects/sh85081654> .
+<http://id.loc.gov/authorities/subjects/sh85081654> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh85081654> <http://www.w3.org/2004/02/skos/core#prefLabel> "Martinis"@en .
+<http://id.loc.gov/authorities/subjects/sh85081654> <http://www.w3.org/2000/01/rdf-schema#label> "Martinis"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#related> <http://id.loc.gov/authorities/subjects/sh85027615> .
+<http://id.loc.gov/authorities/subjects/sh85027615> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh85027615> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cocktail parties"@en .
+<http://id.loc.gov/authorities/subjects/sh85027615> <http://www.w3.org/2000/01/rdf-schema#label> "Cocktail parties"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#related> <http://id.loc.gov/authorities/subjects/sh2009010761> .
+<http://id.loc.gov/authorities/subjects/sh2009010761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh2009010761> <http://www.w3.org/2004/02/skos/core#prefLabel> "Happy hours"@en .
+<http://id.loc.gov/authorities/subjects/sh2009010761> <http://www.w3.org/2000/01/rdf-schema#label> "Happy hours"@en .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.bnf.fr/ark:/12148/cb11934846z> .
+<http://data.bnf.fr/ark:/12148/cb11934846z> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://data.bnf.fr/ark:/12148/cb11934846z> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cocktails (boissons)"@FR .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://d-nb.info/gnd/4010342-0> .
+<http://d-nb.info/gnd/4010342-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://d-nb.info/gnd/4010342-0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cocktail"@DE .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://d-nb.info/gnd/4039532-7> .
+<http://d-nb.info/gnd/4039532-7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://d-nb.info/gnd/4039532-7> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mischgetränk"@DE .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://d-nb.info/gnd/4114442-9> .
+<http://d-nb.info/gnd/4114442-9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://d-nb.info/gnd/4114442-9> <http://www.w3.org/2004/02/skos/core#prefLabel> "Longdrink"@DE .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/authorities/subjects> .
+<http://id.loc.gov/authorities/subjects/sh85027617> <http://www.w3.org/2004/02/skos/core#altLabel> "Mixed drinks"@en .

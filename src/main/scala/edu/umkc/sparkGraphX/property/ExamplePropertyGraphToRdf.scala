@@ -17,21 +17,24 @@ package edu.umkc.sparkGraphX.property
 //output RDF triples about node relationships to other nodes (or, in RDF parlance, object property triples)
 //using a base URI that I defined at the top of the program to convert identifiers to URIs when necessary.
 //This produced triples such as
-//<http://snee.com/xpropgraph#istoica> <http://snee.com/xpropgraph#colleague> <http://snee.com/xpropgraph#franklin>
+//<http://umkc.edu/xPropGraph#istoica> <http://umkc.edu/xPropGraph#colleague> <http://umkc.edu/xPropGraph#franklin>
 //in the output. Finally, the program outputs non-relationship values (literal properties), producing triples such as
-//<http://snee.com/xpropgraph#rxin> <http://snee.com/xpropgraph#role> "student".*/
+//<http://umkc.edu/xPropGraph#rxin> <http://umkc.edu/xPropGraph#role> "student".*/
 
-import org.apache.spark.{SparkConf, SparkContext}
+import edu.umkc.graphx.Util.FileMerger
 import org.apache.spark.graphx._
 import org.apache.spark.rdd.RDD
+import org.apache.spark.{SparkConf, SparkContext}
 
-import scala.reflect.io.Path
+import scala.reflect.io.Path;
 
-object ExamplePropertyGraph {
+
+
+object ExamplePropertyGraphToRdf {
   def main(args: Array[String]) {
     System.setProperty("hadoop.home.dir", "F:\\winutils")
-    val sc = new SparkContext(new SparkConf().setAppName("ExamplePropertyGraph").setMaster("local"))
-    val baseURI = "http://snee.com/xpropgraph#"
+    val sc = new SparkContext(new SparkConf().setAppName("ExamplePropertyGraphToRdf").setMaster("local"))
+    val baseURI = "http://umkc.edu/xPropGraph#"
 
 
     // Create an RDD for the vertices
@@ -48,6 +51,8 @@ object ExamplePropertyGraph {
         (11L, ("roshan", "student")),
         (12L, ("nilesh", "student"))
       ))
+   // users.map(t=>"vertexNumber: "+t._1+" Subject: "+t._2._1+" predicate: role"+" object: "+t._2._2).saveAsTextFile("src/main/resources/inputData/rdfUser.txt")
+    users.collect().foreach(println)
     // Create an RDD for edges
     val relationships: RDD[Edge[String]] =
       sc.parallelize(Array(
@@ -61,9 +66,11 @@ object ExamplePropertyGraph {
         Edge(5L, 10L, "advisor"),
         Edge(2L, 11L, "advisor")
       ))
+    //relationships.map(t=>"StartNumber: "+t.srcId+" DestNumber: "+t.dstId+" Relationship: "+t.attr).saveAsTextFile("src/main/resources/inputData/rdfRelation.txt")
+    relationships.collect().foreach(println)
     // Build the initial Graph
     val graph = Graph(users, relationships)
-
+    graph.triplets.collect().foreach(println)
     // Output object property triples
     graph.triplets.foreach( t => println(
       s"<$baseURI${t.srcAttr._1}> <$baseURI${t.attr}> <$baseURI${t.dstAttr._1}> ."
@@ -76,7 +83,7 @@ object ExamplePropertyGraph {
       println("Successfully existing output rdf1.tx deleted!!")
     }
     println("Writing in new files as output.......")
-    graph.triplets.map(t=>s"<$baseURI${t.srcAttr._1}> <$baseURI${t.attr}> <$baseURI${t.dstAttr._1}>.").saveAsTextFile("src/main/resources/outputData/rdf1.txt")
+    graph.triplets.map(t=>s"<$baseURI${t.srcAttr._1}> <$baseURI${t.attr}> <$baseURI${t.dstAttr._1}> .").saveAsTextFile("src/main/resources/outputData/rdf1.txt")
    // saveAsTextFile("src/main/resources/outputData/rdf.txt")
 
     // Output literal property triples
@@ -91,6 +98,15 @@ object ExamplePropertyGraph {
     }
     println("Writing in new files as output.......")
     users.map(t=>s"""<$baseURI${t._2._1}> <${baseURI}role> \"${t._2._2}\" .""").saveAsTextFile("src/main/resources/outputData/rdf2.txt")
+    //Deleting output files recursively if exists
+    val dirMerged = Path("src/main/resources/outputData/MergeRdf1Rdf2.nt")
+    if (dirMerged .exists) {
+      dirMerged .deleteRecursively()
+      println("Successfully existing merged output  deleted!!")
+    }
+
+    //merge two files
+    FileMerger.main(args: Array[String])
     sc.stop
 
   }

@@ -1,8 +1,8 @@
-<http://snee.com/xpropgraph#ishwar> <http://snee.com/xpropgraph#colleague> <http://snee.com/xpropgraph#franklin>.
-<http://snee.com/xpropgraph#ishwar> <http://snee.com/xpropgraph#advisor> <http://snee.com/xpropgraph#nitin>.
-<http://snee.com/xpropgraph#ishwar> <http://snee.com/xpropgraph#advisor> <http://snee.com/xpropgraph#roshan>.
-<http://snee.com/xpropgraph#rakesh> <http://snee.com/xpropgraph#collab> <http://snee.com/xpropgraph#john>.
-<http://snee.com/xpropgraph#franklin> <http://snee.com/xpropgraph#advisor> <http://snee.com/xpropgraph#rakesh>.
-<http://snee.com/xpropgraph#franklin> <http://snee.com/xpropgraph#pi> <http://snee.com/xpropgraph#john>.
-<http://snee.com/xpropgraph#franklin> <http://snee.com/xpropgraph#advisor> <http://snee.com/xpropgraph#biswash>.
-<http://snee.com/xpropgraph#franklin> <http://snee.com/xpropgraph#advisor> <http://snee.com/xpropgraph#amit>.
+<http://umkc.edu/xPropGraph#ishwar> <http://umkc.edu/xPropGraph#colleague> <http://umkc.edu/xPropGraph#franklin> .
+<http://umkc.edu/xPropGraph#ishwar> <http://umkc.edu/xPropGraph#advisor> <http://umkc.edu/xPropGraph#nitin> .
+<http://umkc.edu/xPropGraph#ishwar> <http://umkc.edu/xPropGraph#advisor> <http://umkc.edu/xPropGraph#roshan> .
+<http://umkc.edu/xPropGraph#rakesh> <http://umkc.edu/xPropGraph#collab> <http://umkc.edu/xPropGraph#john> .
+<http://umkc.edu/xPropGraph#franklin> <http://umkc.edu/xPropGraph#advisor> <http://umkc.edu/xPropGraph#rakesh> .
+<http://umkc.edu/xPropGraph#franklin> <http://umkc.edu/xPropGraph#pi> <http://umkc.edu/xPropGraph#john> .
+<http://umkc.edu/xPropGraph#franklin> <http://umkc.edu/xPropGraph#advisor> <http://umkc.edu/xPropGraph#biswash> .
+<http://umkc.edu/xPropGraph#franklin> <http://umkc.edu/xPropGraph#advisor> <http://umkc.edu/xPropGraph#amit> .

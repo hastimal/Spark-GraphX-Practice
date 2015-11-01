@@ -48,15 +48,15 @@ object ReadLoCSH {
     // Read the Library of Congress n-triples file
     //val source = Source.fromFile("sampleSubjects.nt","UTF-8")  // shorter for testing
   //  val source = Source.fromFile("PrefLabelAndRelatedMinusBlankNodes.nt", "UTF-8")
-    val source = Source.fromFile("E:\\Technical course\\Course\\Directed Reading\\rdf from anas\\subject.nt", "UTF-8")
+    val source = Source.fromFile("src/main/resources/inputRDF/samplecongress.nt", "iso-8859-1")
     val lines = source.getLines.toArray
 
     // When parsing the data we read, use this map to check whether each
     // URI has come up before.
-    var vertexURIMap = new HashMap[String, Long];
+    val vertexURIMap = new HashMap[String, Long];
 
     // Parse the data into triples.
-    var triple = new Array[String](3)
+    var triple = new Array[String](2)
     var nextVertexNum = 0L
     for (i <- 0 until lines.length) {
       // Space in next line needed for line after that.
@@ -69,10 +69,12 @@ object ReadLoCSH {
       if (!(vertexURIMap.contains(tripleSubject))) {
         vertexURIMap(tripleSubject) = nextVertexNum
         nextVertexNum += 1
+
       }
       if (!(vertexURIMap.contains(triplePredicate))) {
         vertexURIMap(triplePredicate) = nextVertexNum
         nextVertexNum += 1
+
       }
       val subjectVertexNumber = vertexURIMap(tripleSubject)
       val predicateVertexNumber = vertexURIMap(triplePredicate)
@@ -94,7 +96,9 @@ object ReadLoCSH {
         literalPropsTriplesArray = literalPropsTriplesArray :+
           (subjectVertexNumber, predicateVertexNumber, triple(2))
       }
+      //tripleSubject
     }
+
 
     // Switch value and key for vertexArray that we'll use to create the
     // GraphX graph.
@@ -128,6 +132,7 @@ object ReadLoCSH {
       sc.parallelize(literalPropsTriplesArray)
 
     val graph: Graph[String, String] = Graph(vertexRDD, edgeRDD)
+    graph.triplets.collect().foreach(println)//Added by HM
 
     // Create a subgraph based on the vertices connected by SKOS "related"
     // property.
@@ -151,17 +156,17 @@ object ReadLoCSH {
     }
 
     // Output a report on the connected components.
-    println("------  connected components in SKOS \"related\" triples ------\n")
-    for ((component, componentList) <- componentLists) {
-      if (componentList.size > 1) {
-        // don't bother with lists of only 1
-        for (c <- componentList) {
-          println(prefLabelMap(c));
-        }
-        println("--------------------------")
-      }
-    }
+//    println("------  connected components in SKOS \"related\" triples ------\n")
+//    for ((component, componentList) <- componentLists) {
+//      if (componentList.size > 1) {
+//        // don't bother with lists of only 1
+//        for (c <- componentList) {
+//          println(prefLabelMap(c));
+//        }
+//        println("--------------------------")
+//      }
+//    }
 
-    sc.stop
+   // sc.stop
   }
 }
