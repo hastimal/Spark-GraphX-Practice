@@ -109,8 +109,7 @@ object ReadLoCSH {
       if (literalPropsTriplesArray(i)._2 ==
         vertexURIMap("http://www.w3.org/2004/02/skos/core#prefLabel")) {
         // Lose the language tag.
-        val prefLabel =
-          languageTagPattern.replaceFirstIn(literalPropsTriplesArray(i)._3, "")
+        val prefLabel = languageTagPattern.replaceFirstIn(literalPropsTriplesArray(i)._3, "")
         prefLabelMap(literalPropsTriplesArray(i)._1) = prefLabel;
       }
     }
@@ -119,18 +118,19 @@ object ReadLoCSH {
 
     // vertexRDD Long: the GraphX longint identifier. String: the URI.
     val vertexRDD: RDD[(Long, String)] = sc.parallelize(vertexArray)
+    vertexRDD.collect().foreach(println)
 
     // edgeRDD String: the URI of the triple predicate. Trimming off the
     // first Edge in the array because it was only used to initialize it.
     val edgeRDD: RDD[Edge[(String)]] =
       sc.parallelize(edgeArray.slice(1, edgeArray.length))
-
+    edgeRDD.collect().foreach(println)
     // literalPropsTriples Long, Long, and String: the subject and predicate
     // vertex numbers and the the literal value that the predicate is
     // associating with the subject.
     val literalPropsTriplesRDD: RDD[(Long, Long, String)] =
       sc.parallelize(literalPropsTriplesArray)
-
+    literalPropsTriplesRDD.foreach(println)
     val graph: Graph[String, String] = Graph(vertexRDD, edgeRDD)
     graph.triplets.collect().foreach(println)//Added by HM
 
@@ -156,17 +156,17 @@ object ReadLoCSH {
     }
 
     // Output a report on the connected components.
-//    println("------  connected components in SKOS \"related\" triples ------\n")
-//    for ((component, componentList) <- componentLists) {
-//      if (componentList.size > 1) {
-//        // don't bother with lists of only 1
-//        for (c <- componentList) {
-//          println(prefLabelMap(c));
-//        }
-//        println("--------------------------")
-//      }
-//    }
+    println("------  connected components in SKOS \"related\" triples ------\n")
+    for ((component, componentList) <- componentLists) {
+      if (componentList.size > 1) {
+        // don't bother with lists of only 1
+        for (c <- componentList) {
+          println(prefLabelMap(c));
+        }
+        println("--------------------------")
+      }
+    }
 
-   // sc.stop
+    sc.stop
   }
 }

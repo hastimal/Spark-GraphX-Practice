@@ -33,6 +33,11 @@ import scala.reflect.io.Path;
 object ExamplePropertyGraphToRdf {
   def main(args: Array[String]) {
     System.setProperty("hadoop.home.dir", "F:\\winutils")
+    import org.apache.log4j.Logger
+    import org.apache.log4j.Level
+
+    Logger.getLogger("org").setLevel(Level.OFF)
+    Logger.getLogger("akka").setLevel(Level.OFF)
     val sc = new SparkContext(new SparkConf().setAppName("ExamplePropertyGraphToRdf").setMaster("local"))
     val baseURI = "http://umkc.edu/xPropGraph#"
 

@@ -9,6 +9,7 @@ import scala.io.Source
 
 /**
  * Created by hastimal on 10/30/2015.
+ * http://www.snee.com/bobdc.blog/2015/04/running-spark-graphx-algorithm.html
  */
   object  ExampleRdfToPropertyGraph {
 
